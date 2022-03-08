@@ -28,11 +28,12 @@ app.use((req, res, err) => {
 // listening port
 mongoose
 	.connect(
-		`mongodb+srv://${DB_ADMIN}:${DB_PASSWORD}@10.185.44.100/contacts?retryWrites=true&w=majority`,
-		{
-			useNewUrlParser: true,
-			useUnifiedTopology: true,
-		}
+		`mongodb://${DB_ADMIN}:${DB_PASSWORD}@10.185.44.100/contacts`,
+		//`mongodb+srv://${DB_ADMIN}:${DB_PASSWORD}@10.185.44.100/contacts?retryWrites=true&w=majority`,
+		//{
+		//	useNewUrlParser: true,
+		//	useUnifiedTopology: true,
+		//}
 	)
 	.then(() => {
 		app.listen(PORT, () => {
