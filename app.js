@@ -28,7 +28,7 @@ app.use((req, res, err) => {
 // listening port
 mongoose
 	.connect(
-		`mongodb+srv://${DB_ADMIN}:${DB_PASSWORD}@cluster0.h9bja.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
+		`mongodb+srv://${DB_ADMIN}:${DB_PASSWORD}@10.185.44.100/contacts?retryWrites=true&w=majority`,
 		{
 			useNewUrlParser: true,
 			useUnifiedTopology: true,
