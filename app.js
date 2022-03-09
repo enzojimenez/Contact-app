@@ -28,7 +28,7 @@ app.use((req, res, err) => {
 // listening port
 mongoose
 	.connect(
-		`mongodb://process.env.MONGODB/contacts`,
+		`mongodb://${process.env.MONGODB}/contacts`,
 		{
 			authSource: "admin",
 			user: DB_ADMIN,
